@@ -20,15 +20,26 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import styledComponents from "./tech/styled-components.png";
+import rest from "./tech/rest.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import university from "./company/university.png";
+import sodruzhestvo from "./company/sodruzhestvo.png";
+import goit from "./company/goit.jpg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import goosetrack from "./goosetrack.png";
+import petly from "./petly.png";
+import phonebook from "./phonebook.png";
+import filmoteka from "./filmoteka.png";
+import icecream from "./icecream.png";
+import webstudio from "./webstudio.png";
 
 export {
   logo,
@@ -59,4 +70,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  university,
+  sodruzhestvo,
+  goit,
+  styledComponents,
+  rest,
+  goosetrack,
+  petly,
+  phonebook,
+  filmoteka,
+  icecream,
+  webstudio,
 };
