@@ -25,7 +25,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-[320px] sm:w-[360px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -74,9 +74,9 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <div>
+    <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
+        <p className={`${styles.sectionSubText}`}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
       </motion.div>
 
@@ -98,7 +98,7 @@ const Works = () => {
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
