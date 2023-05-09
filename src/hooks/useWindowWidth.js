@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const SCREEN_MOBILE = 320;
 const SCREEN_TABLET = 768;
-const SCREEN_DESKTOP = 1024;
+const SCREEN_DESKTOP = 1280;
 
 export const useWindowWidth = () => {
   const [width, setWidth] = useState(window.innerWidth);
