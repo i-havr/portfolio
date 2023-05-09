@@ -5,14 +5,36 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const Tech = () => {
+  const techMobileDevicesNames = [
+    "Javascript",
+    "React JS",
+    "Redux Toolkit",
+    "Node JS",
+    "MongoDB",
+  ];
+
+  const techMobileDevicesArray = technologies.filter((technology) =>
+    techMobileDevicesNames.includes(technology.name)
+  );
+
   return (
-    <div className='flex flex-row flex-wrap justify-center gap-10'>
-      {technologies.map((technology) => (
-        <div className='w-28 h-28' key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="hidden sm:flex flex flex-row flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
+
+      <div className="ms:hidden flex flex-row flex-wrap justify-center gap-10">
+        {technologies.map((technology) => (
+          <div className="w-28 h-28" key={technology.name}>
+            <BallCanvas icon={technology.icon} />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
