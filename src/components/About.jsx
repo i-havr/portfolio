@@ -44,10 +44,9 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I have experience with implementing both individual and team projects
-        using HTML5, CSS3, JavaScript, React.js, Redux and Node.js.
-        <br />
-        I'm a quick learner and collaborate closely with team members as it is
-        important for me to grow as a developer in a team of professionals.
+        using HTML5, CSS3, JavaScript, React.js, Redux and Node.js. I'm a quick
+        learner and collaborate closely with team members as it is important for
+        me to grow as a developer in a team of professionals.
         <br />
         Let's work together to bring any task to life!
       </motion.p>

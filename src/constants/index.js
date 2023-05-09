@@ -304,7 +304,7 @@ const projects = [
   {
     name: "Filmoteka",
     description:
-      "Website for finding information about movies. Application with a responsive layout. Added personal account. The ability to add films to list of favorites or watched has been implemented. Role: Developer.",
+      "Website for finding information about movies. Application with a responsive layout. Added personal account. The ability to add films to list of favorites or watched has been implemented. Team project. Role: Developer.",
     tags: [
       {
         name: "html",
