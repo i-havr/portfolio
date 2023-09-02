@@ -9,11 +9,11 @@ const Tech = () => {
   const { isScreenDesktop } = useWindowWidth();
 
   const techMobileDevicesNames = [
-    "JavaScript",
+    "TypeScript",
     "React JS",
+    "Next JS",
     "Redux Toolkit",
     "Node JS",
-    "MongoDB",
   ];
 
   const techMobileDevicesArray = technologies.filter((technology) =>

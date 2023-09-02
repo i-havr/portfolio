@@ -8,6 +8,7 @@ import {
   html,
   css,
   reactjs,
+  next,
   redux,
   tailwind,
   nodejs,
@@ -25,8 +26,10 @@ import {
   threejs,
   rest,
   styledComponents,
+  carptravel,
   goosetrack,
   petly,
+  rn,
   phonebook,
   filmoteka,
   icecream,
@@ -80,22 +83,22 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  // {
-  //   name: "TypeScript",
-  //   icon: typescript,
-  // },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: next,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
-  // {
-  //   name: "Tailwind CSS",
-  //   icon: tailwind,
-  // },
   {
     name: "Node JS",
     icon: nodejs,
@@ -104,26 +107,30 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
   // {
   //   name: "Three JS",
   //   icon: threejs,
   // },
-  {
-    name: "rest",
-    icon: rest,
-  },
-  {
-    name: "styledComponents",
-    icon: styledComponents,
-  },
+  // {
+  //   name: "rest",
+  //   icon: rest,
+  // },
+  // {
+  //   name: "styledComponents",
+  //   icon: styledComponents,
+  // },
   {
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
   {
     name: "docker",
     icon: docker,
@@ -236,6 +243,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "CarpTravel",
+    description: `An extremely attractive landing, which provides an opportunity to choose a vacation in the Carpathians for any taste. You can also start a career in tourism here. Significant work has been done with the Swiper component (in "Services" and "Gallery" sections). Feedback forms are implemented and verificated using react-hook-form and Tailwind. Solo project.`,
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carptravel,
+    project_link: "https://carp-travel-psi.vercel.app/",
+    source_code_link: "https://github.com/i-havr/carp-travel",
+  },
+  {
     name: "Goose Track",
     description:
       "A calendar application for planning affairs and events. Frontend and backend have been completed. Implemented authorization and authentication. Added validation of forms and user data, as well as the ability to change the avatar. Responsive design, theming and language change performed. Team project. Role: developer.",
@@ -279,6 +307,29 @@ const projects = [
     image: petly,
     project_link: "https://afanasevkirillgithub.github.io/petly_frontend/",
     source_code_link: "https://github.com/AfanasevKirillGitHub/petly_frontend",
+  },
+  {
+    name: "Sharing photo app",
+    description:
+      "React Native mobile application that allows users to create posts with photos, view other users' posts, like and comment them. Solo project.",
+    tags: [
+      {
+        name: "react_native",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "green-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: rn,
+    project_link:
+      "https://expo.dev/@i-havr/AwesomeProject?serviceType=classic&distribution=expo-go",
+    source_code_link: "https://github.com/i-havr/react-native",
   },
   {
     name: "Phonebook",
