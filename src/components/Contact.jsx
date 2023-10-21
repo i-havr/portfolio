@@ -41,7 +41,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: name.trim,
+          from_name: name.trim(),
           to_name: "Ihor Havrylov",
           from_email: email,
           to_email: "i.havrylov@gmail.com",
