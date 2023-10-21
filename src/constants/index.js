@@ -1,7 +1,7 @@
 import {
-  mobile,
+  // mobile,
   backend,
-  creator,
+  // creator,
   web,
   javascript,
   typescript,
@@ -15,17 +15,17 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  // docker,
   goit,
-  starbucks,
+  softryzen,
+  // starbucks,
   sodruzhestvo,
   university,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
-  rest,
-  styledComponents,
+  // threejs,
+  // rest,
+  // styledComponents,
+  phlebologist,
+  mafia,
   carptravel,
   goosetrack,
   petly,
@@ -111,6 +111,14 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
+  {
+    name: "figma",
+    icon: figma,
+  },
+  {
+    name: "git",
+    icon: git,
+  },
   // {
   //   name: "Three JS",
   //   icon: threejs,
@@ -123,18 +131,10 @@ const technologies = [
   //   name: "styledComponents",
   //   icon: styledComponents,
   // },
-  {
-    name: "git",
-    icon: git,
-  },
   // {
-  //   name: "figma",
-  //   icon: figma,
+  //   name: "docker",
+  //   icon: docker,
   // },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
@@ -167,10 +167,21 @@ const experiences = [
     date: "2022 - 2023",
     points: [
       "Developed web applications using React.js, Node.js and other related technologies.",
-      "Collaborated with team members during team projects to create high-quality products.",
       "Participated in one of the projects as a team leader.",
       "Participated in code reviews.",
       "Implemented responsive design and ensuring cross-browser compatibility.",
+    ],
+  },
+  {
+    title: "Intern Frontend Developer",
+    company_name: "SoftRyzen (two-month internship)",
+    icon: softryzen,
+    iconBg: "#383E56",
+    date: "Sep - Oct 2023",
+    points: [
+      "Participated in two commercial projects.",
+      "Took part in educational meetings.",
+      "Collaborated with team members (including PM, QA, designers) during team projects to create high-quality products.",
     ],
   },
   // {
@@ -242,6 +253,56 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Phlebologist",
+    description: `Commercial multipage and multi-language site for doctor Sergii Voitsitskyi. Frontend and admin panel (Tina). Slider “before-after” was realized. Responsive attractive design was implemented. The feedback form allows you to schedule a consultation. Team project. Role: developer.`,
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tina",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: phlebologist,
+    project_link: "https://phlebologist.vercel.app/uk",
+    source_code_link: "https://github.com/SoftRyzen-internship/phlebologist",
+  },
+  {
+    name: "Mafia Club Odesa",
+    description: `Commercial multipage site for players in Mafia game in Odesa. Frontend and admin panel (Strapi) have been completed. Responsive attractive design and stunning sliders were implemented. The feedback form gives an opportunity to enroll in the game. Team project. Role: developer.`,
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "strapi",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: mafia,
+    project_link: "https://mafiaodessa.com/",
+    source_code_link: "https://github.com/SoftRyzen-internship/Mafia-frontend",
+  },
   {
     name: "CarpTravel",
     description: `An extremely attractive landing, which provides an opportunity to choose a vacation in the Carpathians for any taste. You can also start a career in tourism here. Significant work has been done with the Swiper component (in "Services" and "Gallery" sections). Feedback forms are implemented and verificated using react-hook-form and Tailwind. Solo project.`,

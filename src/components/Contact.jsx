@@ -1,6 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
+import useFormPersist from "react-hook-form-persist";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
+
+import { FORM_DATA_KEY } from "../constants/sessionStorageKey";
+import formBuildingData from "../data/formBuildingData.json";
+
+import { FormInput } from "./FormInput";
+import { FormTextarea } from "./FormTextarea";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -8,60 +17,50 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
+  const { name, email, message } = formBuildingData.options;
 
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
+  const {
+    register,
+    reset,
+    watch,
+    setValue,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
+  useFormPersist(FORM_DATA_KEY, { watch, setValue });
 
-    emailjs
-      .send(
+  const onSubmit = async (formData) => {
+    try {
+      setLoading(true);
+      const { name, email, message } = formData;
+
+      await emailjs.send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: name.trim,
           to_name: "Ihor Havrylov",
-          from_email: form.email,
+          from_email: email,
           to_email: "i.havrylov@gmail.com",
-          message: form.message,
+          message: message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
-        }
       );
+      toast.success("Thank you. I will get back to you as soon as possible.", {
+        duration: 5000,
+      });
+      reset();
+      sessionStorage.removeItem(FORM_DATA_KEY);
+    } catch (error) {
+      toast.error("Ahh, something went wrong. Please try again.", {
+        duration: 5000,
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -74,45 +73,27 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
+          Write to me on{" "}
+          <a
+            href="https://t.me/i_havrylov"
+            rel="noopener noreferrer nofollow"
+            target="_blank"
+            className="hover:cursor-pointer hover:underline font-bold"
+          >
+            Telegram
+          </a>{" "}
+          or fill out the feedback form below.
+        </p>
 
         <form
-          ref={formRef}
-          onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
+          noValidate
+          onSubmit={handleSubmit(onSubmit)}
         >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your good name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your web address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
+          <FormInput register={register} errors={errors} options={name} />
+          <FormInput register={register} errors={errors} options={email} />
+          <FormTextarea register={register} errors={errors} options={message} />
 
           <button
             type="submit"

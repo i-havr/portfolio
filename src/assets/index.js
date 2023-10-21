@@ -7,22 +7,22 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
 import html from "./tech/html.png";
+import css from "./tech/css.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import typescript from "./tech/typescript.png";
 import reactjs from "./tech/reactjs.png";
 import next from "./tech/next.png";
+import nodejs from "./tech/nodejs.png";
+import mongodb from "./tech/mongodb.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import styledComponents from "./tech/styled-components.png";
+import git from "./tech/git.png";
+import figma from "./tech/figma.png";
 import rest from "./tech/rest.png";
+import docker from "./tech/docker.png";
+import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,18 +31,20 @@ import tesla from "./company/tesla.png";
 import university from "./company/university.png";
 import sodruzhestvo from "./company/sodruzhestvo.png";
 import goit from "./company/goit.jpg";
+import softryzen from "./company/softryzen.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import carptravel from "./carptravel.jpg";
-import goosetrack from "./goosetrack.png";
-import petly from "./petly.jpg";
-import rn from "./rn.jpg";
-import phonebook from "./phonebook.png";
-import filmoteka from "./filmoteka.jpg";
-import icecream from "./icecream.jpg";
-import webstudio from "./webstudio.jpg";
+// PROJECTS
+
+import phlebologist from "./projects/phlebolog.webp";
+import mafia from "./projects/mafia.webp";
+import carptravel from "./projects/carptravel.webp";
+import goosetrack from "./projects/goosetrack.webp";
+import petly from "./projects/petly.webp";
+import rn from "./projects/rn.webp";
+import phonebook from "./projects/phonebook.webp";
+import filmoteka from "./projects/filmoteka.webp";
+import icecream from "./projects/icecream.webp";
+import webstudio from "./projects/webstudio.webp";
 
 export {
   logo,
@@ -71,14 +73,14 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
   university,
   sodruzhestvo,
   goit,
+  softryzen,
   styledComponents,
   rest,
+  phlebologist,
+  mafia,
   carptravel,
   goosetrack,
   petly,

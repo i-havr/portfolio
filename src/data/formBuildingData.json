@@ -1,0 +1,29 @@
+{
+  "options": {
+    "name": {
+      "name": "name",
+      "label": "Your Name",
+      "error": "You have provided the incorrect name",
+      "required": true,
+      "placeholder": "What's your good name?",
+      "pattern": "^(?![\\s-]*[\\s-])(?!.*  )(?!.*--)(?!.*- )(?!.* -)(?!.*'-)(?=.*[A-Za-zА-Яа-яЇїІіЄєҐґ])[A-Za-zА-Яа-яЇїІіЄєҐґ' -]+$",
+      "minLength": 2,
+      "maxLength": 70
+    },
+    "email": {
+      "name": "email",
+      "label": "Your Email",
+      "error": "You have entered the email address incorrectly",
+      "required": true,
+      "placeholder": "What's your web address?",
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+    },
+    "message": {
+      "name": "message",
+      "label": "Your Message",
+      "required": "The field is required ",
+      "placeholder": "What you want to say?",
+      "maxLength": { "value": 500, "message": "Maximum 500 characters" }
+    }
+  }
+}
