@@ -34,6 +34,9 @@ import {
   filmoteka,
   icecream,
   webstudio,
+  o_kuznietsova,
+  a_smirnova,
+  o_birkovska,
 } from "../assets";
 
 export const navLinks = [
@@ -179,7 +182,7 @@ const experiences = [
     iconBg: "#383E56",
     date: "Sep - Oct 2023",
     points: [
-      "Participated in two commercial projects.",
+      "Participated in three commercial projects.",
       "Took part in educational meetings.",
       "Collaborated with team members (including PM, QA, designers) during team projects to create high-quality products.",
     ],
@@ -228,27 +231,30 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I am delighted to provide a recommendation for Ihor, a remarkable team member who has consistently displayed exceptional dedication and technical expertise. Ihor's contributions to our team have been invaluable. \nIhor is a quiet and focused individual, and it is in this demeanor that he has shone as an outstanding performer. He is driven by a genuine thirst for knowledge, constantly seeking to expand his understanding and expertise in various domains. \nHis commitment to projects is palpable, as he actively engages in asking questions and seeking assistance when needed. Ihor's willingness to share his experience and knowledge, along with his aptitude for teaching, sets him apart. His structured communication style and ability to deliver captivating presentations make him a valuable asset to the team. \nFrom a technical perspective, Ihor demonstrates a high level of proficiency. While some tasks may be challenging, he consistently approaches them with determination and refusal to give up. His technical curiosity extends to a keen interest in project details and exploration of best technical practices. \nNotably, Ihor's enthusiasm for exploring other programming languages, along with his prior background, adds to his technical versatility and depth of knowledge. His continuous drive for self-improvement makes him a true asset to any team. \nIn summary, Ihor's dedication, technical proficiency, and curiosity for new technologies and best practices have made him a standout team member. His quiet and focused demeanor belies his exceptional ability to contribute actively to our projects and share his expertise with colleagues.",
+    name: "Oksana Kuznietsova",
+    linkedin: "https://www.linkedin.com/in/oksana-kuznietsova/",
+    designation: "Head of the Internship Program",
+    company: "SoftRyzen",
+    image: o_kuznietsova,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Sincerely recommend Ihor and I'm confident he'll positively impact any frontend team. We worked together on interesting project and used Next.js, TypeScript, Tailwind та Strapi. Ihor worked with difficult tasks and delivered good results. \nHe's industrious, good-tempered, communicative team-member, who often take initiative. So he'll be a great fit for your team.",
+    name: "Anastasiia Smirnova",
+    linkedin: "https://www.linkedin.com/in/anastasiasmirnovapm/",
+    designation: "Project Manager",
+    company: "SoftRyzen",
+    image: a_smirnova,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "I had a pleasure working with Ihor on several project during the Frontend Internship at SoftRyzen. I can most certainly recommend Ihor as a skilled developer, who is always eager to take on any task, regardless of the level of difficulty. He always strives to learn new techniques and technologies, improve his skills. He is also a very positive person, always willing to help out his colleagues. \nI would also like to point out his exceprional presentational skills. Ihor is a true teammate, an enthusiastic professional and a valuable asset to the developers' team. \nI would be happy to work on some other projects with him in the future, if I get the chance.",
+    name: "Olga Birkovska",
+    linkedin: "https://www.linkedin.com/in/olga-birkovska/",
+    designation: "Frontend Developer",
+    company: "SoftRyzen",
+    image: o_birkovska,
   },
 ];
 

@@ -46,6 +46,12 @@ import filmoteka from "./projects/filmoteka.webp";
 import icecream from "./projects/icecream.webp";
 import webstudio from "./projects/webstudio.webp";
 
+// TESTIMONIALS
+
+import o_kuznietsova from "./testimonials/1.webp";
+import a_smirnova from "./testimonials/2.webp";
+import o_birkovska from "./testimonials/3.webp";
+
 export {
   logo,
   backend,
@@ -89,4 +95,7 @@ export {
   filmoteka,
   icecream,
   webstudio,
+  o_kuznietsova,
+  a_smirnova,
+  o_birkovska,
 };
