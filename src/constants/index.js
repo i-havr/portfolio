@@ -176,7 +176,7 @@ const experiences = [
     ],
   },
   {
-    title: "Intern Frontend Developer",
+    title: "Frontend Developer",
     company_name: "SoftRyzen (two-month internship)",
     icon: softryzen,
     iconBg: "#383E56",

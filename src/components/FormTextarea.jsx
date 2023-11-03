@@ -10,7 +10,7 @@ export const FormTextarea = ({ register, errors, options }) => {
         rows={7}
         placeholder={placeholder}
         {...register(name, { ...restOptions })}
-        className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+        className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium resize-none"
       />
 
       {hasError ? (
